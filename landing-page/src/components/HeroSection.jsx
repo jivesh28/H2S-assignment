@@ -1,5 +1,5 @@
 import styles from "./HeroSection.module.css";
-import heroImage from "../assets/background.png";
+import heroImage from "../assets/background.jpg";
 import { FaInstagram, FaTwitter } from "react-icons/fa6";
 
 const HeroSection = () => {
