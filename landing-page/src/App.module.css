@@ -30,3 +30,10 @@ body, html {
 .fullHeightSection {
   height: 100vh;
 }
+
+.wrapper {
+  background-color: #0B1D23;
+  height: 200vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}

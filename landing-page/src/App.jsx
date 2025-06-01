@@ -7,12 +7,14 @@ import Section from './components/section';
 
 function App() {
   return (
-     <div className={styles.appContainer}>
+     <div className={ ` ${styles.appContainer} `}>
     <Header></Header>
     <HeroSection></HeroSection>
-    <Section id="01" title="Get Started" ></Section>
-    <Section id="02" title="Gear Up" />
-    <Section id="03" title="Be Safe" />
+    <> 
+     <Section id="01" title="Get Started" />
+      <Section id="02" title="Gear Up" />
+      <Section id="03" title="Be Safe" />
+    </>
     <Footer></Footer>
     </div>
   );
