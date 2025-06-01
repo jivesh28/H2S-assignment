@@ -1,0 +1,31 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 4rem;
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  color: #fff;
+  font-family: 'Gilroy', sans-serif;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.navLinks a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.account {
+  font-size: 1rem;
+  color: #fff;
+}
