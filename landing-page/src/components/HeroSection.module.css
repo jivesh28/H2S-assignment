@@ -1,22 +1,49 @@
 .hero {
   height: 100vh;
-  background-size: cover;
-  background-position: center;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #fff;
+  overflow: visible;
+  z-index: 1;
+}
+
+.imageWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120vh;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.heroImage {
+  width: 100%;
+  height: 120vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+.fade {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 20vh;
+  background: linear-gradient(to bottom, rgba(11, 29, 38, 0) 0%, #0B1D23 100%);
+  z-index: 1;
 }
 
 .overlay {
-  background: rgba(11, 29, 38, 0.6);
   width: 100%;
   height: 100%;
   padding: 4rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  z-index: 2;
+  position: relative;
 }
 
 .meta {
@@ -43,6 +70,7 @@
   opacity: 0.7;
 }
 
+
 .followus {
   writing-mode: vertical-lr;
   text-orientation: mixed;
@@ -52,4 +80,46 @@
   font-size: 0.8rem;
   letter-spacing: 2px;
   opacity: 0.7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+.icon {
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+  position: absolute;
+  color: white;
+  left: 2rem;
+  top: 18rem;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  opacity: 0.7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+.icon2{
+writing-mode: vertical-lr;
+  text-orientation: mixed;
+  position: absolute;
+  color: white;
+  left: 2rem;
+  top: 20rem;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  opacity: 0.7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+.start{
+  text-orientation: mixed;
+  position: absolute;
+  right: 7rem;
+  top: 20rem;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
 }
